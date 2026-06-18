@@ -1,0 +1,31 @@
+# Condos Padding The High Line Are Ridiculously Pricier Than Their Neighbors - Avid Realty Partners | Multifamily Real Estate Investment
+**URL:** https://avidrealtypartners.com/condos-padding-high-line-ridiculously-pricier-neighbors/
+**Status:** ok
+**Meta description:** High Line is considered as one of the dramatic examples of how famous tourist destinations have altered the landscape around it. As a matter of fact, StreetEasy refers to it as completely unprecedented. The development of the park coincided with the creation of West Chelsea Special District of Mayor Bloomberg that rezoned neighborhood from light
+---
+## Full page text
+Skip to content X Facebook Instagram LinkedIn YouTube 212-540-4540 Research Investor Portal About Investment Opportunities Portfolio Careers Media Contact Us Invest with Us Previous Next Condos Padding The High Line Are Ridiculously Pricier Than Their Neighbors View Larger Image High Line is considered as one of the dramatic examples of how famous tourist destinations have altered the landscape around it. As a matter of fact, StreetEasy refers to it as completely unprecedented. The development of the park coincided with the creation of West Chelsea Special District of Mayor Bloomberg that rezoned neighborhood from light industrial area to a place for mixed residential and commercial development. StreetEasy stated that the park space’s success as well as the new developments surrounding it goes hand-in-hand. Buildings wouldn’t exist if it were not for the changes in the zoning and High Line wouldn’t be the same without its surrounding buildings. In High Line’s first section area that opened in year 2009, the price for median resale is $2,143,287, which is more than 100% pricier compared to real estate value in comparison area a block to east between Seventh and Ninth Avenues. It is also seventy-five percent higher compared to the rest of the Downtown Manhattan. At the park’s second section that opened in year 2011, $1,300,281 is the median resale price, which is 7% higher compared to other places in Downtown Manhattan. The prices in the Section Two are increasing rapidly and up to 11.75 yearly compared to the Section One with 9.7% yearly. Since year 2011, the prices in Section One have increased by 50.6% while the Section Two prices have boosted 48.2% in comparison to the price increase of 31.4% in the adjacent areas. The most striking about the growth in the price is that this proves to be impervious to the trends affecting luxury real estate market at large. While the entire Manhattan’s luxury market is softening, the pricing for homes in the Section 1 and 2 of High Line have appreciated by nearly ten and 9.4 percent since May 2016. The pricing on the new luxury developing in every section is blowing some new developments in area of the water in a year, the recoded median sale price for sponsor sale in the new buildings in Section One was actually $4,419,204 and in Section Two is $6,058,587, which is higher than the prices in the adjacent blocks. The development will continue. Based on the report in Wall Street Journal that was first reported on the data of StreetEasy, there are eleven developments with a total of 155 apartments are still under construction while 9 more are planned with the other 751 hotel rooms or apartments. The reports that High Line condo prices have increased to between two thousand dollars and three thousand dollars per square foot from a thousand dollars back in 2009, while the finishes and architecture for the new developments have gotten fancier and famous architects including Bjarke Ingels, Jeanne Gang, and Zaha Hadid are working and there are also rumors that they will have projects around the said park. The arrival of the Hudson Yards also promises to transform the area in the future. StreetEasy stated that if the trends hold true today, the launch of the major new development will only extend the success of High Line. By Craig Berger|0 Comments Share This Story, Choose Your Platform! Facebook X LinkedIn WhatsApp About the Author: Craig Berger Founder & CEO of Avid Realty Partners. Craig has been an active real estate investor for nearly 20 years, and founded Avid Realty Partners in 2015 to deploy capital across Multifamily Apartment and other real estate assets. Avid Realty Partners’ portfolio includes the acquisition of more than 2,000 apartment and hotel doors in targeted growth markets across the US totaling over $275M of acquisition value. The firm has zero realized losses with a 33.0% IRR (weighted average) across six exited deals. Related Posts View Details View Details View Details View Details View Details View Details Leave A Comment Comment Save my name, email, and website in this browser for the next time I comment. ABOUT Why Avid Realty Partners Investment Approach Track Record Meet the Avid Team MEDIA Blog Events News Videos LEARN MORE Investment Opportunities Portfolio Research Careers CONTACT US Avid Realty Partners 14 East 33rd Street, Suite 7s New York, NY 10016 212-540-4540 Get in Touch with Our Team WE ARE SOCIAL © 2023 Avid Realty Partners. Privacy Policy Terms & Conditions Website & Brand Development by 2ROCK1 Media Go to Top
+---
+## Headings
+- **H1:** Condos Padding The High Line Are Ridiculously Pricier Than Their Neighbors
+- **H2:** Condos Padding The High Line Are Ridiculously Pricier Than Their Neighbors
+- **H4:** Share This Story, Choose Your Platform!
+- **H3:** About the Author: Craig Berger
+- **H3:** Related Posts
+- **H4:** View Details
+- **H4:** View Details
+- **H4:** View Details
+- **H4:** View Details
+- **H4:** View Details
+- **H4:** View Details
+- **H3:** Leave A Comment
+- **H4:** ABOUT
+- **H4:** MEDIA
+- **H4:** LEARN MORE
+- **H4:** CONTACT US
+- **H4:** WE ARE SOCIAL
+## Image alt text
+- Avid Realty Partners | Multifamily Real Estate Investment Logo
+- Condos Padding The High Line Are Ridiculously Pricier Than Their Neighbors
+- How to Make One Million Dollars Investing in Rental Properties
+- How to Buy Multifamily Property to Gain Income and Make Money

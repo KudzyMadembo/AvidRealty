@@ -1,0 +1,182 @@
+[
+  {
+    "name": "01-homepage",
+    "url": "https://avidrealtypartners.com/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\01-homepage-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\01-homepage-viewport.png"
+    ]
+  },
+  {
+    "name": "02-about-overview",
+    "url": "https://avidrealtypartners.com/about/overview/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\02-about-overview-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\02-about-overview-viewport.png"
+    ]
+  },
+  {
+    "name": "03-about-why-avid",
+    "url": "https://avidrealtypartners.com/why-avid-realty-partners/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\03-about-why-avid-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\03-about-why-avid-viewport.png"
+    ]
+  },
+  {
+    "name": "04-about-investment-approach",
+    "url": "https://avidrealtypartners.com/investment-approach/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\04-about-investment-approach-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\04-about-investment-approach-viewport.png"
+    ]
+  },
+  {
+    "name": "05-about-track-record",
+    "url": "https://avidrealtypartners.com/track-record/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\05-about-track-record-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\05-about-track-record-viewport.png"
+    ]
+  },
+  {
+    "name": "06-about-meet-the-team",
+    "url": "https://avidrealtypartners.com/meet-the-avid-team/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\06-about-meet-the-team-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\06-about-meet-the-team-viewport.png"
+    ]
+  },
+  {
+    "name": "07-investment-opportunities",
+    "url": "https://avidrealtypartners.com/investment-opportunities/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\07-investment-opportunities-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\07-investment-opportunities-viewport.png"
+    ]
+  },
+  {
+    "name": "08-portfolio",
+    "url": "https://avidrealtypartners.com/portfolio/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\08-portfolio-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\08-portfolio-viewport.png"
+    ]
+  },
+  {
+    "name": "09-careers",
+    "url": "https://avidrealtypartners.com/careers/",
+    "status": "http-404",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\09-careers-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\09-careers-viewport.png"
+    ]
+  },
+  {
+    "name": "10-media-think-big-savvy-investors",
+    "url": "https://avidrealtypartners.com/think-big-savvy-investors/",
+    "status": "http-404",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\10-media-think-big-savvy-investors-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\10-media-think-big-savvy-investors-viewport.png"
+    ]
+  },
+  {
+    "name": "11-media-2023-mid-market-outlook",
+    "url": "https://avidrealtypartners.com/2023-mid-market-outlook/",
+    "status": "http-404",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\11-media-2023-mid-market-outlook-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\11-media-2023-mid-market-outlook-viewport.png"
+    ]
+  },
+  {
+    "name": "12-media-webinar-replay",
+    "url": "https://avidrealtypartners.com/webinar-replay/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\12-media-webinar-replay-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\12-media-webinar-replay-viewport.png"
+    ]
+  },
+  {
+    "name": "13-media-blog",
+    "url": "https://avidrealtypartners.com/blog/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\13-media-blog-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\13-media-blog-viewport.png"
+    ]
+  },
+  {
+    "name": "14-media-events",
+    "url": "https://avidrealtypartners.com/events/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\14-media-events-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\14-media-events-viewport.png"
+    ]
+  },
+  {
+    "name": "15-media-news",
+    "url": "https://avidrealtypartners.com/news/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\15-media-news-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\15-media-news-viewport.png"
+    ]
+  },
+  {
+    "name": "16-media-videos",
+    "url": "https://avidrealtypartners.com/videos/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\16-media-videos-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\16-media-videos-viewport.png"
+    ]
+  },
+  {
+    "name": "17-research",
+    "url": "https://avidrealtypartners.com/research/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\17-research-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\17-research-viewport.png"
+    ]
+  },
+  {
+    "name": "18-investor-portal",
+    "url": "https://avidrealtypartners.com/investor-portal/",
+    "status": "http-404",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\18-investor-portal-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\18-investor-portal-viewport.png"
+    ]
+  },
+  {
+    "name": "19-contact-us",
+    "url": "https://avidrealtypartners.com/contact-us/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\19-contact-us-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\19-contact-us-viewport.png"
+    ]
+  },
+  {
+    "name": "20-invest-with-us",
+    "url": "https://avidrealtypartners.com/invest-with-us/",
+    "status": "ok",
+    "files": [
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\20-invest-with-us-full.png",
+      "C:\\Users\\kudzy\\OneDrive\\Desktop\\Work\\AvidRealty\\screenshots\\20-invest-with-us-viewport.png"
+    ]
+  }
+]
