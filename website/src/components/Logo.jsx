@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { site } from '../data/content';
-import logoImg from '../assets/brand/logo.png';
-import faviconImg from '../assets/brand/favicon.png';
+
+const asset = (file) => `${import.meta.env.BASE_URL}${file}`;
 
 export default function Logo({ variant = 'full', size = 'md', className = '' }) {
   const sizes = {
@@ -12,7 +12,7 @@ export default function Logo({ variant = 'full', size = 'md', className = '' }) 
   if (variant === 'icon') {
     return (
       <img
-        src={faviconImg}
+        src={asset('favicon.png')}
         alt={`${site.name} logo`}
         className={`h-8 w-8 object-contain ${className}`}
         width={32}
@@ -23,7 +23,7 @@ export default function Logo({ variant = 'full', size = 'md', className = '' }) 
 
   return (
     <img
-      src={logoImg}
+      src={asset('logo.png')}
       alt={`${site.name} logo`}
       className={`${sizes[size] ?? sizes.md} object-contain ${className}`}
       width={180}
