@@ -1,71 +1,114 @@
 import { Link } from 'react-router-dom';
 import { site, navLinks } from '../data/content';
+import { LogoLink } from './Logo';
+
+const linkClass = 'text-[13px] leading-snug text-white/55 transition-colors hover:text-white';
 
 export default function Footer() {
   const about = navLinks.find((n) => n.label === 'About')?.children ?? [];
   const media = navLinks.find((n) => n.label === 'Media')?.children ?? [];
 
+  const learnMore = [
+    { label: 'Investment Opportunities', path: '/investment-opportunities' },
+    { label: 'Portfolio', path: '/portfolio' },
+    { label: 'Research', path: '/research' },
+    { label: 'Careers', path: '/careers' },
+    { label: 'Invest with Us', path: '/invest' },
+  ];
+
   return (
-    <footer className="bg-navy-950 text-white">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
-          <div>
-            <Link to="/" className="mb-4 inline-block">
-              <img src={site.logo} alt={site.name} className="h-12 w-auto" />
-            </Link>
-            <p className="text-sm leading-relaxed text-white/60">
-              A multifamily real estate investment platform delivering institutional analytics, sunbelt expertise, and proven returns.
+    <footer className="border-t border-white/10 bg-navy-950 text-white">
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:py-10">
+        <div className="grid grid-cols-2 items-start gap-x-6 gap-y-8 sm:grid-cols-3 lg:grid-cols-6 lg:gap-x-8">
+          {/* Brand */}
+          <div className="col-span-2 sm:col-span-3 lg:col-span-2">
+            <LogoLink className="mb-3" size="sm" />
+            <p className="max-w-xs text-[13px] leading-relaxed text-white/50">
+              Multifamily investment platform with institutional analytics and sunbelt expertise.
             </p>
-            <div className="mt-4 flex gap-3">
-              <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-gold-400" aria-label="LinkedIn">LinkedIn</a>
-              <a href={site.social.youtube} target="_blank" rel="noopener noreferrer" className="text-white/40 hover:text-gold-400" aria-label="YouTube">YouTube</a>
+            <div className="mt-4 flex flex-wrap gap-x-3 gap-y-1">
+              {[
+                { label: 'LinkedIn', href: site.social.linkedin },
+                { label: 'YouTube', href: site.social.youtube },
+                { label: 'Instagram', href: site.social.instagram },
+              ].map((s) => (
+                <a
+                  key={s.label}
+                  href={s.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[12px] text-white/40 hover:text-gold-400"
+                >
+                  {s.label}
+                </a>
+              ))}
             </div>
           </div>
 
+          {/* About */}
           <div>
-            <h4 className="mb-4 text-xs font-semibold uppercase tracking-wider text-gold-400">About</h4>
-            <ul className="space-y-2">
+            <h4 className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold-400/90">
+              About
+            </h4>
+            <ul className="space-y-1.5">
               {about.map((l) => (
-                <li key={l.path}><Link to={l.path} className="text-sm text-white/60 hover:text-white">{l.label}</Link></li>
+                <li key={l.path}>
+                  <Link to={l.path} className={linkClass}>{l.label}</Link>
+                </li>
               ))}
             </ul>
           </div>
 
+          {/* Media */}
           <div>
-            <h4 className="mb-4 text-xs font-semibold uppercase tracking-wider text-gold-400">Media</h4>
-            <ul className="space-y-2">
+            <h4 className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold-400/90">
+              Media
+            </h4>
+            <ul className="space-y-1.5">
               {media.map((l) => (
-                <li key={l.path}><Link to={l.path} className="text-sm text-white/60 hover:text-white">{l.label}</Link></li>
+                <li key={l.path}>
+                  <Link to={l.path} className={linkClass}>{l.label}</Link>
+                </li>
               ))}
-            </ul>
-            <h4 className="mb-4 mt-6 text-xs font-semibold uppercase tracking-wider text-gold-400">Learn More</h4>
-            <ul className="space-y-2 text-sm text-white/60">
-              <li><Link to="/investment-opportunities" className="hover:text-white">Investment Opportunities</Link></li>
-              <li><Link to="/portfolio" className="hover:text-white">Portfolio</Link></li>
-              <li><Link to="/research" className="hover:text-white">Research</Link></li>
-              <li><Link to="/careers" className="hover:text-white">Careers</Link></li>
             </ul>
           </div>
 
+          {/* Learn More */}
           <div>
-            <h4 className="mb-4 text-xs font-semibold uppercase tracking-wider text-gold-400">Contact</h4>
-            <address className="not-italic text-sm leading-relaxed text-white/60">
-              {site.name}<br />
-              {site.address}<br />
-              {site.city}<br />
-              <a href={`tel:${site.phone}`} className="hover:text-white">{site.phone}</a>
+            <h4 className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold-400/90">
+              Learn More
+            </h4>
+            <ul className="space-y-1.5">
+              {learnMore.map((l) => (
+                <li key={l.path}>
+                  <Link to={l.path} className={linkClass}>{l.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold-400/90">
+              Contact
+            </h4>
+            <address className="space-y-1 not-italic text-[13px] leading-snug text-white/55">
+              <span className="block">{site.address}</span>
+              <span className="block">{site.city}</span>
+              <a href={`tel:${site.phone}`} className="block hover:text-white">{site.phone}</a>
+              <a href={`mailto:${site.email}`} className="block break-all hover:text-white">{site.email}</a>
             </address>
-            <Link to="/contact" className="mt-4 inline-block text-sm text-gold-400 hover:text-gold-500">
+            <Link to="/contact" className="mt-3 inline-block text-[12px] font-medium text-gold-400 hover:text-gold-500">
               Get in Touch →
             </Link>
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-8 sm:flex-row">
-          <p className="text-xs text-white/40">© {new Date().getFullYear()} Avid Realty Partners.</p>
-          <div className="flex gap-6 text-xs text-white/40">
-            <Link to="/privacy" className="hover:text-white">Privacy Policy</Link>
-            <Link to="/terms" className="hover:text-white">Terms & Conditions</Link>
+        <div className="mt-8 flex flex-col items-center justify-between gap-3 border-t border-white/10 pt-6 sm:flex-row">
+          <p className="text-[11px] text-white/35">© {new Date().getFullYear()} Avid Realty Partners. All rights reserved.</p>
+          <div className="flex gap-5 text-[11px] text-white/35">
+            <Link to="/privacy" className="hover:text-white/70">Privacy Policy</Link>
+            <Link to="/terms" className="hover:text-white/70">Terms & Conditions</Link>
           </div>
         </div>
       </div>

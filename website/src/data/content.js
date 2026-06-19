@@ -6,7 +6,6 @@ export const site = {
   address: '14 East 33rd Street, Suite 7s',
   city: 'New York, NY 10016',
   investorPortal: 'https://investors.appfolioim.com/avidrealtypartners/investor',
-  logo: '/avid-logo.png',
   social: {
     linkedin: 'https://www.linkedin.com/company/avidrealtypartners',
     facebook: 'https://www.facebook.com/AvidRealtyPartners',
