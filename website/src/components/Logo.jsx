@@ -6,7 +6,7 @@ const asset = (file) => `${import.meta.env.BASE_URL}${file}`;
 export default function Logo({ variant = 'full', size = 'md', className = '' }) {
   const sizes = {
     sm: 'h-11 w-auto sm:h-12',
-    md: 'h-14 w-auto sm:h-16',
+    md: 'h-[3.75rem] w-auto sm:h-[4.25rem]',
   };
 
   if (variant === 'icon') {
