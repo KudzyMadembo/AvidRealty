@@ -6,7 +6,7 @@ import { trackRecordStats, trackRecordDeals, images } from '../data/content';
 export default function TrackRecord() {
   return (
     <>
-      <PageHero title="Track Record" subtitle="Profits with a Purpose" image={images.building} />
+      <PageHero title="Track Record" subtitle="Profits with a Purpose" image={images.trackRecord} />
       <section className="py-12">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <p className="leading-relaxed text-navy-800/70">

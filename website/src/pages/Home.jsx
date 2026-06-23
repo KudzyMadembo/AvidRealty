@@ -68,7 +68,7 @@ export default function Home() {
             <Button to="/about" variant="outline" className="mt-8">Learn More</Button>
           </div>
           <div className="relative">
-            <img src={images.building} alt="Multifamily property" className="rounded-2xl shadow-2xl" />
+            <img src={images.homePlatform} alt="Luxury multifamily apartment community" className="rounded-2xl shadow-2xl" />
             <div className="absolute -bottom-6 -left-6 rounded-xl bg-navy-900 p-6 text-white shadow-xl">
               <div className="font-serif text-3xl text-gold-400">33%</div>
               <div className="text-sm text-white/60">Avg. Realized IRR</div>

@@ -7,7 +7,7 @@ import { investmentOpportunityTypes, images } from '../data/content';
 export default function InvestmentOpportunities() {
   return (
     <>
-      <PageHero title="Investment Opportunities" subtitle="Invest with a True Partner" image={images.hero} />
+      <PageHero title="Investment Opportunities" subtitle="Invest with a True Partner" image={images.investmentOpportunities} />
       <section className="py-16">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <p className="text-lg leading-relaxed text-navy-800/75">

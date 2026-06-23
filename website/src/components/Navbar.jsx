@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown, Phone } from 'lucide-react';
+import { Menu, X, ChevronDown } from 'lucide-react';
 import { navLinks, site } from '../data/content';
 import Button from './Button';
 import { LogoLink } from './Logo';
+import { PhoneLink, SocialLinks } from './SocialLinks';
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
@@ -17,17 +18,8 @@ export default function Navbar() {
       <div className="bg-navy-950 text-white/80">
         <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-xs sm:px-6">
           <div className="flex items-center gap-4">
-            <a href={`tel:${site.phone}`} className="flex items-center gap-1.5 hover:text-gold-400">
-              <Phone className="h-3.5 w-3.5" />
-              {site.phone}
-            </a>
-            <div className="hidden items-center gap-3 sm:flex">
-              <a href={site.social.x} target="_blank" rel="noopener noreferrer" className="hover:text-gold-400">X</a>
-              <a href={site.social.facebook} target="_blank" rel="noopener noreferrer" className="hover:text-gold-400">Facebook</a>
-              <a href={site.social.instagram} target="_blank" rel="noopener noreferrer" className="hover:text-gold-400">Instagram</a>
-              <a href={site.social.linkedin} target="_blank" rel="noopener noreferrer" className="hover:text-gold-400">LinkedIn</a>
-              <a href={site.social.youtube} target="_blank" rel="noopener noreferrer" className="hover:text-gold-400">YouTube</a>
-            </div>
+            <PhoneLink />
+            <SocialLinks className="hidden sm:flex" />
           </div>
           <div className="flex items-center gap-4">
             <Link to="/research" className="hover:text-gold-400">Research</Link>
@@ -111,6 +103,7 @@ export default function Navbar() {
               )
             )}
             <Button to="/invest" className="mt-4 w-full">Invest with Us</Button>
+            <SocialLinks className="mt-6 justify-center" />
           </div>
         )}
       </nav>

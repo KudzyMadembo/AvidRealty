@@ -1,4 +1,4 @@
-import { asset, brandAssets, propertyAssets, teamAssets, webinarAssets } from './assets.js';
+import { asset, brandAssets, propertyAssets, pageAssets, teamAssets, webinarAssets } from './assets.js';
 import { blogPostsFromAssets } from './blogPosts.js';
 
 function cleanBlogContent(content) {
@@ -65,17 +65,31 @@ export const site = {
 };
 
 export const images = {
-  hero: brandAssets.hero,
-  heroAlt: propertyAssets.pearl,
+  about: pageAssets.about,
+  whyAvid: pageAssets.whyAvid,
+  investmentApproach: pageAssets.investmentApproach,
+  trackRecord: pageAssets.trackRecord,
+  team: pageAssets.team,
+  investmentOpportunities: pageAssets.investmentOpportunities,
+  portfolio: pageAssets.portfolio,
+  careers: pageAssets.careers,
+  thinkBig: pageAssets.thinkBig,
+  report: pageAssets.report,
+  webinar: pageAssets.webinar,
+  blog: pageAssets.blog,
+  events: pageAssets.events,
+  news: pageAssets.news,
+  videos: pageAssets.videos,
+  contact: pageAssets.contact,
+  research: pageAssets.research,
+  homePlatform: pageAssets.homePlatform,
+  hero: pageAssets.homeHero1,
+  heroAlt: pageAssets.homeHero2,
   pool: propertyAssets.auxo,
-  skyline: brandAssets.hero,
+  building: pageAssets.homePlatform,
   interior: propertyAssets.pearl,
-  team: teamAssets.craigLg,
-  analytics: brandAssets.hero,
-  building: propertyAssets.reserve,
-  contact: propertyAssets.regency,
-  research: brandAssets.hero,
-  careers: propertyAssets.pines,
+  analytics: pageAssets.homeHero3,
+  skyline: pageAssets.about,
 };
 
 export const stats = [
@@ -91,21 +105,21 @@ export const heroSlides = [
     subtitle: '33% Average IRR across six exited deals',
     cta: 'View Track Record',
     link: '/track-record',
-    image: images.pool,
+    image: pageAssets.homeHero1,
   },
   {
     title: '$100M of Cumulative Capital Raised',
     subtitle: 'New offerings available for qualified investors',
     cta: 'Investment Opportunities',
     link: '/investment-opportunities',
-    image: images.hero,
+    image: propertyAssets.pearl,
   },
   {
     title: 'Institutional Analytics',
-    subtitle: 'Founded by a multi-award-winning Wall Street equities analyst',
+    subtitle: 'Wall Street-grade underwriting across sunbelt multifamily markets',
     cta: 'Our Approach',
     link: '/investment-approach',
-    image: images.analytics,
+    image: pageAssets.homeHero3,
   },
 ];
 
@@ -187,7 +201,7 @@ export const currentInvestments = [
     targetPeriod: '5 Years',
     minInvestment: '$100,000',
     targetIRR: '21.1%',
-    image: propertyAssets.reserve,
+    image: propertyAssets.terraces,
   },
   {
     name: 'Auxo at Memorial',

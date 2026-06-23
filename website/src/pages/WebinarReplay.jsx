@@ -9,7 +9,7 @@ export default function WebinarReplay() {
       <PageHero
         title="Get Ready To Elevate Your Investment Portfolio"
         subtitle="Webinar Replay"
-        image={images.interior}
+        image={images.webinar}
       />
       <section className="py-12">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">

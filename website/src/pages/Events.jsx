@@ -6,7 +6,7 @@ import { Calendar, MapPin } from 'lucide-react';
 export default function Events() {
   return (
     <>
-      <PageHero title="Events" subtitle="Media" image={images.team} />
+      <PageHero title="Events" subtitle="Media" image={images.events} />
       <section className="py-20">
         <div className="mx-auto max-w-3xl space-y-6 px-4 sm:px-6">
           {events.map((e) => (

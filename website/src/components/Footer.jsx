@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { site, navLinks } from '../data/content';
 import { LogoLink } from './Logo';
+import { SocialLinks } from './SocialLinks';
 
 const linkClass = 'text-[13px] leading-snug text-white/55 transition-colors hover:text-white';
 
@@ -26,23 +27,7 @@ export default function Footer() {
             <p className="max-w-xs text-[13px] leading-relaxed text-white/50">
               Multifamily investment platform with institutional analytics and sunbelt expertise.
             </p>
-            <div className="mt-4 flex flex-wrap gap-x-3 gap-y-1">
-              {[
-                { label: 'LinkedIn', href: site.social.linkedin },
-                { label: 'YouTube', href: site.social.youtube },
-                { label: 'Instagram', href: site.social.instagram },
-              ].map((s) => (
-                <a
-                  key={s.label}
-                  href={s.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[12px] text-white/40 hover:text-gold-400"
-                >
-                  {s.label}
-                </a>
-              ))}
-            </div>
+            <SocialLinks className="mt-4" />
           </div>
 
           {/* About */}

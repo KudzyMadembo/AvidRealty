@@ -7,7 +7,7 @@ import { testimonials, images } from '../data/content';
 export default function Invest() {
   return (
     <>
-      <PageHero title="Invest With Us" subtitle="Partner With Avid" image={images.heroAlt} />
+      <PageHero title="Invest With Us" subtitle="Partner With Avid" image={images.investmentOpportunities} />
       <section className="py-16">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <p className="text-lg leading-relaxed text-navy-800/75">

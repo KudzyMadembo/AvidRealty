@@ -6,7 +6,7 @@ import { videos, images } from '../data/content';
 export default function Videos() {
   return (
     <>
-      <PageHero title="Videos" subtitle="Latest Videos & Podcasts" image={images.interior} />
+      <PageHero title="Videos" subtitle="Latest Videos & Podcasts" image={images.videos} />
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-2">
           {videos.map((v) => (

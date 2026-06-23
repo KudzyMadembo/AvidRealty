@@ -12,7 +12,7 @@ const points = [
 export default function InvestmentApproach() {
   return (
     <>
-      <PageHero title="Investment Approach" subtitle="How We Invest" image={images.analytics} />
+      <PageHero title="Investment Approach" subtitle="How We Invest" image={images.investmentApproach} />
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl items-start gap-12 px-4 sm:px-6 lg:grid-cols-2">
           <div>

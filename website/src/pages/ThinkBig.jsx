@@ -1,7 +1,7 @@
 import PageHero from '../components/PageHero';
 import Newsletter from '../components/Newsletter';
 import LeadForm, { TopicGrid, ChapterList } from '../components/LeadForm';
-import { thinkBigContent, craigBergerBio, images } from '../data/content';
+import { thinkBigContent, images } from '../data/content';
 
 export default function ThinkBig() {
   return (
@@ -9,7 +9,7 @@ export default function ThinkBig() {
       <PageHero
         title={thinkBigContent.headline}
         subtitle={thinkBigContent.subheadline}
-        image={images.analytics}
+        image={images.thinkBig}
       />
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -29,14 +29,11 @@ export default function ThinkBig() {
         </div>
       </section>
       <section className="py-20">
-        <div className="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[280px_1fr]">
-          <img src={craigBergerBio.image} alt={craigBergerBio.name} className="mx-auto w-full max-w-[280px] rounded-2xl object-cover shadow-lg" />
-          <div>
-            <h2 className="font-serif text-2xl text-navy-900">About the Author</h2>
-            <h3 className="mt-2 text-lg font-semibold text-navy-800">{craigBergerBio.name}</h3>
-            <p className="text-sm text-gold-500">{craigBergerBio.title}</p>
-            <p className="mt-4 leading-relaxed text-navy-800/70">{craigBergerBio.paragraphs[0]}</p>
-          </div>
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <h2 className="font-serif text-2xl text-navy-900">About the Author</h2>
+          <p className="mt-4 leading-relaxed text-navy-800/70">
+            Written by Craig Berger, Founder &amp; CEO of Avid Realty Partners — a multi-award-winning former Wall Street equities analyst with nearly 20 years of multifamily real estate investing experience.
+          </p>
         </div>
       </section>
       <Newsletter />

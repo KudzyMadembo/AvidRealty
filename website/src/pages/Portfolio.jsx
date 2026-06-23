@@ -6,7 +6,7 @@ import { currentInvestments, exitedInvestments, images } from '../data/content';
 export default function Portfolio() {
   return (
     <>
-      <PageHero title="Portfolio" subtitle="Our Properties" image={images.pool} />
+      <PageHero title="Portfolio" subtitle="Our Properties" image={images.portfolio} />
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <h2 className="mb-10 font-serif text-2xl text-navy-900">Current Investments</h2>

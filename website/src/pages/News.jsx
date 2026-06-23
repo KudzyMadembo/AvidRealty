@@ -5,7 +5,7 @@ import { newsItems, images } from '../data/content';
 export default function News() {
   return (
     <>
-      <PageHero title="News" subtitle="Media" image={images.skyline} />
+      <PageHero title="News" subtitle="Media" image={images.news} />
       <section className="py-20">
         <div className="mx-auto max-w-3xl px-4 sm:px-6">
           <div className="space-y-0 divide-y divide-navy-900/10">

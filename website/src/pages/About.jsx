@@ -6,19 +6,12 @@ import { craigBergerBio, coreValues, images } from '../data/content';
 export default function About() {
   return (
     <>
-      <PageHero title="Overview" subtitle="About Us" image={images.skyline} />
+      <PageHero title="Overview" subtitle="About Us" image={images.about} />
       <section className="py-20">
-        <div className="mx-auto grid max-w-7xl items-start gap-12 px-4 sm:px-6 lg:grid-cols-[320px_1fr]">
-          <div className="text-center lg:text-left">
-            <img
-              src={craigBergerBio.image}
-              alt={craigBergerBio.name}
-              className="mx-auto aspect-[4/5] w-full max-w-[280px] rounded-2xl object-cover shadow-xl lg:mx-0"
-            />
-            <h2 className="mt-6 font-serif text-2xl text-navy-900">{craigBergerBio.name}</h2>
-            <p className="mt-1 text-sm font-medium text-gold-500">{craigBergerBio.title}</p>
-          </div>
-          <div>
+        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+          <h2 className="font-serif text-2xl text-navy-900">{craigBergerBio.name}</h2>
+          <p className="mt-1 text-sm font-medium text-gold-500">{craigBergerBio.title}</p>
+          <div className="mt-8">
             {craigBergerBio.paragraphs.map((p) => (
               <p key={p.slice(0, 50)} className="mb-4 leading-relaxed text-navy-800/75">{p}</p>
             ))}

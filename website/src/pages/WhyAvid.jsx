@@ -5,7 +5,7 @@ import { images } from '../data/content';
 export default function WhyAvid() {
   return (
     <>
-      <PageHero title="Why Invest with Avid Realty Partners?" subtitle="Why Avid" image={images.team} />
+      <PageHero title="Why Invest with Avid Realty Partners?" subtitle="Why Avid" image={images.whyAvid} />
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <p className="mx-auto max-w-3xl text-center text-lg text-navy-800/70">

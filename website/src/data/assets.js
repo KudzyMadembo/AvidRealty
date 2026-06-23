@@ -12,6 +12,31 @@ export const propertyAssets = {
   pines: asset('properties/pines-at-woodcreek.jpg'),
   regency: asset('properties/regency-st-louis.jpg'),
   reserve: asset('properties/reserve-at-heritage.jpg'),
+  terraces: asset('properties/terraces-perkins-rowe.jpg'),
+};
+
+export const pageAssets = {
+  about: asset('pages/about.jpg'),
+  whyAvid: asset('pages/why-avid.jpg'),
+  investmentApproach: asset('pages/investment-approach.jpg'),
+  trackRecord: asset('pages/track-record.jpg'),
+  team: asset('pages/team.jpg'),
+  investmentOpportunities: asset('pages/investment-opportunities.jpg'),
+  portfolio: asset('pages/portfolio.jpg'),
+  careers: asset('pages/careers.jpg'),
+  thinkBig: asset('pages/think-big.jpg'),
+  report: asset('pages/report.jpg'),
+  webinar: asset('pages/webinar.jpg'),
+  blog: asset('pages/blog.jpg'),
+  events: asset('pages/events.jpg'),
+  news: asset('pages/news.jpg'),
+  videos: asset('pages/videos.jpg'),
+  contact: asset('pages/contact.jpg'),
+  research: asset('pages/research.jpg'),
+  homePlatform: asset('pages/home-platform.jpg'),
+  homeHero1: asset('pages/home-hero-1.jpg'),
+  homeHero2: asset('pages/home-hero-2.jpg'),
+  homeHero3: asset('pages/home-hero-3.jpg'),
 };
 
 export const teamAssets = {

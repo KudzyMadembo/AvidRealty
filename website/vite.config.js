@@ -11,9 +11,9 @@ export default defineConfig({
     tailwindcss(),
     {
       name: 'spa-404',
-      closeBundle() {
-        const dist = resolve(__dirname, 'dist')
-        copyFileSync(resolve(dist, 'index.html'), resolve(dist, '404.html'))
+      writeBundle() {
+        const dist = resolve(__dirname, 'dist');
+        copyFileSync(resolve(dist, 'index.html'), resolve(dist, '404.html'));
       },
     },
   ],

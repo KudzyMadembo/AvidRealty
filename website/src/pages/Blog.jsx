@@ -7,7 +7,7 @@ import { blogPosts, images } from '../data/content';
 export default function Blog() {
   return (
     <>
-      <PageHero title="Blog" subtitle="Insights & Analysis" image={images.research} />
+      <PageHero title="Blog" subtitle="Insights & Analysis" image={images.blog} />
       <section className="py-20">
         <div className="mx-auto grid max-w-7xl gap-8 px-4 sm:grid-cols-2 lg:grid-cols-3 sm:px-6">
           {blogPosts.map((post) => (
