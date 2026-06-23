@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { MapPin, Building2 } from 'lucide-react';
 
-export default function PropertyCard({ property, exited = false }) {
+export default function PropertyCard({ property, exited = false, pipeline = false }) {
   const details = [
     property.yearBuilt && { label: 'Year Built', value: property.yearBuilt },
     property.units && { label: 'Units', value: property.units },
@@ -10,7 +10,9 @@ export default function PropertyCard({ property, exited = false }) {
     property.investmentType && { label: 'Investment Type', value: property.investmentType },
     property.targetPeriod && { label: 'Target Period', value: property.targetPeriod },
     property.minInvestment && { label: 'Min. Investment', value: property.minInvestment },
-    property.targetIRR && { label: 'Target IRR', value: property.targetIRR, highlight: true },
+    property.equityRequired && { label: 'Equity Required', value: property.equityRequired },
+    property.targetIRR && { label: pipeline ? 'Projected Gross IRR' : 'Target IRR', value: property.targetIRR, highlight: true },
+    property.equityMultiple && { label: 'Equity Multiple', value: property.equityMultiple, highlight: true },
     property.irr && { label: 'Realized IRR', value: property.irr, highlight: true },
     property.period && { label: 'Hold Period', value: property.period },
   ].filter(Boolean);
@@ -29,6 +31,11 @@ export default function PropertyCard({ property, exited = false }) {
               Exited
             </span>
           )}
+          {pipeline && (
+            <span className="absolute left-4 top-4 rounded-full bg-navy-900 px-3 py-1 text-xs font-semibold text-gold-400">
+              Pipeline
+            </span>
+          )}
         </div>
       )}
       <div className="p-6">
@@ -45,6 +52,16 @@ export default function PropertyCard({ property, exited = false }) {
             </div>
           ))}
         </dl>
+        {property.highlights?.length > 0 && (
+          <ul className="mt-4 space-y-1.5 border-t border-navy-900/5 pt-4 text-sm text-navy-800/65">
+            {property.highlights.map((h) => (
+              <li key={h} className="flex gap-2">
+                <span className="text-gold-500">•</span>
+                {h}
+              </li>
+            ))}
+          </ul>
+        )}
       </div>
     </article>
   );

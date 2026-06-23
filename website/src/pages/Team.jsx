@@ -25,7 +25,7 @@ export default function Team() {
       <section className="bg-cream-100 py-16">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
           <h2 className="mb-10 text-center font-serif text-2xl text-navy-900">Professional Team</h2>
-          <div className="grid gap-10 sm:grid-cols-3">
+          <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
             {professionalTeam.map((m) => <TeamCard key={m.name} member={m} />)}
           </div>
         </div>

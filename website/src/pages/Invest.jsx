@@ -21,8 +21,9 @@ export default function Invest() {
           <div>
             <h2 className="font-serif text-2xl text-navy-900">Why Investors Choose Avid</h2>
             <ul className="mt-6 space-y-3 text-sm text-navy-800/70">
-              <li className="flex gap-2"><span className="text-gold-500">✓</span> Zero realized losses across six exited deals</li>
-              <li className="flex gap-2"><span className="text-gold-500">✓</span> 33% weighted average realized IRR</li>
+              <li className="flex gap-2"><span className="text-gold-500">✓</span> Zero realized losses across seven full-cycle exits</li>
+              <li className="flex gap-2"><span className="text-gold-500">✓</span> 32% weighted average gross IRR on exited deals</li>
+              <li className="flex gap-2"><span className="text-gold-500">✓</span> $330M+ in multifamily assets acquired</li>
               <li className="flex gap-2"><span className="text-gold-500">✓</span> Deal-by-deal LP, promissory note, 1031, and fund options</li>
               <li className="flex gap-2"><span className="text-gold-500">✓</span> Transparent modeling and regular investor updates</li>
               <li className="flex gap-2"><span className="text-gold-500">✓</span> Institutional underwriting from a Wall Street analyst founder</li>

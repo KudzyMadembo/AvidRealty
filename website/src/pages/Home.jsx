@@ -66,15 +66,15 @@ export default function Home() {
               Avid Realty Partners proudly provides safe and secure housing that positively impacts our Residents&apos; Quality of Life, while generating personal fulfillment, professional growth, and meaningful wealth for our Investor-Partners and Team Members.
             </p>
             <p className="mt-4 leading-relaxed text-navy-800/70">
-              We offer deal-by-deal limited partner opportunities, a high yielding promissory note, and other products. Our management team spent years on Wall Street analyzing volatile investment products, riding economic cycles, and developing an institutional mindset.
+              We offer deal-by-deal limited partner opportunities, a high yielding promissory note, and other products. With a target deployment of $500M–$1B across 20–40 multifamily acquisitions over the next 24–36 months, our management team applies Wall Street-grade analytics to identify opportunities below replacement cost.
             </p>
             <Button to="/about" variant="outline" className="mt-8">Learn More</Button>
           </div>
           <div className="relative">
             <img src={images.homePlatform} alt="Luxury multifamily apartment community" className="rounded-2xl shadow-2xl" />
             <div className="absolute -bottom-6 -left-6 rounded-xl bg-navy-900 p-6 text-white shadow-xl">
-              <div className="font-serif text-3xl text-gold-400">33%</div>
-              <div className="text-sm text-white/60">Avg. Realized IRR</div>
+              <div className="font-serif text-3xl text-gold-400">32%</div>
+              <div className="text-sm text-white/60">Avg. Gross IRR</div>
             </div>
           </div>
         </div>

@@ -93,30 +93,30 @@ export const images = {
 };
 
 export const stats = [
-  { value: '$275M', label: 'Real Estate Assets Acquired' },
-  { value: '1,900+', label: 'Multifamily Units Acquired' },
-  { value: '$100M', label: 'Cumulative Sponsor Capital' },
-  { value: '$79.5M', label: 'Sale Price — Full Cycle Deals' },
+  { value: '$330M', label: 'Real Estate Assets Acquired' },
+  { value: '2,500+', label: 'Multifamily Units Acquired' },
+  { value: '$8M', label: 'Sponsor Co-Invested Capital' },
+  { value: '$140M', label: 'Sold Assets — Full Cycle Deals' },
 ];
 
 export const heroSlides = [
   {
     title: 'Zero Realized Losses',
-    subtitle: '33% Average IRR across six exited deals',
+    subtitle: '32% weighted average gross IRR across 7 full-cycle exits',
     cta: 'View Track Record',
     link: '/track-record',
     image: pageAssets.homeHero1,
   },
   {
-    title: '$100M of Cumulative Capital Raised',
-    subtitle: 'New offerings available for qualified investors',
+    title: '$500M–$1B Target Deployment',
+    subtitle: '20–40 multifamily acquisitions over the next 24–36 months',
     cta: 'Investment Opportunities',
     link: '/investment-opportunities',
     image: pageAssets.homeHero2,
   },
   {
     title: 'Institutional Analytics',
-    subtitle: 'Wall Street-grade underwriting across sunbelt multifamily markets',
+    subtitle: 'Acquiring below replacement cost amid oversupply, refinancing distress, and elevated rates',
     cta: 'Our Approach',
     link: '/investment-approach',
     image: pageAssets.homeHero3,
@@ -145,7 +145,7 @@ export const advantages = [
   {
     title: 'Sunbelt Multifamily Experts',
     description:
-      'We focus on multifamily in growth markets — Houston, Dallas, Denver, Atlanta, Phoenix — where cap rates are higher and population growth is faster.',
+      'We focus on multifamily in sunbelt and select Midwest growth markets — Texas, Florida, Arizona, Nevada, the Carolinas, Georgia, Ohio, Missouri, Indiana, and Tennessee — where demographics and supply dynamics create compelling entry points.',
     icon: 'map',
   },
   {
@@ -195,7 +195,7 @@ export const currentInvestments = [
     location: 'Baton Rouge, LA',
     type: 'Multifamily',
     yearBuilt: 2007,
-    units: 226,
+    units: 330,
     acquired: 'November 2022',
     investmentType: 'Limited Partnership',
     targetPeriod: '5 Years',
@@ -231,10 +231,10 @@ export const currentInvestments = [
   },
   {
     name: 'Pines at Woodcreek',
-    location: 'Houston, TX',
+    location: 'Baton Rouge, LA',
     type: 'Multifamily',
     yearBuilt: 2015,
-    units: 330,
+    units: 226,
     acquired: 'July 2020',
     investmentType: 'Limited Partnership',
     targetPeriod: '5 Years',
@@ -271,36 +271,39 @@ export const currentInvestments = [
 ];
 
 export const exitedInvestments = [
-  { name: 'Woodglen Village', location: 'Houston, TX', type: 'Multifamily', units: 250, yearBuilt: 2000, acquired: 'January 2020', sold: 'February 2022', irr: '40.2%', period: 'Jan 2020 – Feb 2022', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80' },
-  { name: 'Carvana Orlando', location: 'Orlando, FL', type: 'Retail NNN', acquired: 'June 2019', sold: 'April 2022', irr: '26.1%', period: 'Jun 2019 – Apr 2022', image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80' },
-  { name: 'The Broadmoor', location: 'Houston, TX', type: 'Multifamily', units: 235, yearBuilt: 1984, acquired: 'February 2018', sold: 'April 2022', irr: '28.5%', period: 'Feb 2018 – Apr 2022', image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80' },
-  { name: 'The Reserve at Spanish Lake', location: 'St. Louis, MO', type: 'Multifamily', units: 75, yearBuilt: 1985, acquired: 'January 2019', sold: 'October 2020', irr: '70.7%', period: 'Jan 2019 – Oct 2020', image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80' },
+  { name: 'Woodglen Village', location: 'Houston, TX', type: 'Multifamily', units: 250, yearBuilt: 2000, acquired: 'January 2020', sold: 'February 2022', irr: '28.0%', period: 'Jan 2020 – Feb 2022', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80' },
+  { name: 'The Broadmoor', location: 'Houston, TX', type: 'Multifamily', units: 235, yearBuilt: 1984, acquired: 'February 2018', sold: 'April 2022', irr: '43.9%', period: 'Feb 2018 – Apr 2022', image: 'https://images.unsplash.com/photo-1600607687644-c7171b42498f?w=800&q=80' },
+  { name: 'The Reserve at Spanish Lake', location: 'St. Louis, MO', type: 'Multifamily', units: 75, yearBuilt: 1985, acquired: 'January 2019', sold: 'October 2020', irr: '70.6%', period: 'Jan 2019 – Oct 2020', image: 'https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?w=800&q=80' },
 ];
 
-export const trackRecordStats = [
-  { value: '6', label: 'Properties Exited' },
-  { value: '33%', label: 'Weighted Realized IRR' },
-  { value: '2,050', label: 'Units Acquired' },
-];
-
-export const trackRecordDeals = [
-  { name: 'Woodglen Village', type: 'Multifamily', irr: '40.2%', multiple: '1.96x', period: 'Jan 2020 – Feb 2022' },
+export const otherExits = [
   { name: 'Carvana Orlando', type: 'Retail NNN', irr: '26.1%', multiple: '1.83x', period: 'Jun 2019 – Apr 2022' },
-  { name: 'Broadmoor', type: 'Multifamily', irr: '28.5%', multiple: '2.66x', period: 'Feb 2018 – Apr 2022' },
-  { name: 'The Reserve at Spanish Lake', type: 'Multifamily', irr: '70.7%', multiple: '2.46x', period: 'Jan 2019 – Oct 2020' },
   { name: 'Marriott Aloft Hotel', type: 'Hotel Development', irr: '16.0%', multiple: '1.22x', period: 'May 2017 – Jan 2019' },
   { name: 'Ramada Inn Hotel', type: 'Hotel', irr: '30.2%', multiple: '1.90x', period: 'Mar 2016 – Oct 2019' },
 ];
 
+export const trackRecordStats = [
+  { value: '7', label: 'Full-Cycle Exits' },
+  { value: '32%', label: 'Weighted Gross IRR' },
+  { value: '2,500', label: 'Units Acquired' },
+];
+
+export const trackRecordDeals = [
+  { name: 'The Broadmoor', type: 'Multifamily', irr: '43.9%', multiple: '2.66x', period: 'Feb 2018 – Apr 2022' },
+  { name: 'Woodglen Village', type: 'Multifamily', irr: '28.0%', multiple: '1.96x', period: 'Jan 2020 – Feb 2022' },
+  { name: 'The Reserve at Spanish Lake', type: 'Multifamily', irr: '70.6%', multiple: '2.46x', period: 'Jan 2019 – Oct 2020' },
+];
+
 export const leadership = [
   { name: 'Craig Berger', title: 'Founder & Chief Executive Officer', image: teamAssets.craig },
-  { name: 'James MacQueen', title: 'President', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80' },
-  { name: 'Jim McCarthy', title: 'Chief Operating Officer', image: 'https://images.unsplash.com/photo-1519081908948-b024b6fe00fe?w=400&q=80' },
   { name: 'Mary Tucker', title: 'Chief Financial Officer', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80' },
+  { name: 'Eddy Boudiwan', title: 'Executive Vice President', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80' },
+  { name: 'Luis Hernandez', title: 'Chief Acquisition Officer', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
 ];
 
 export const professionalTeam = [
-  { name: 'Luis Hernandez', title: 'Chief Acquisition Officer', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80' },
+  { name: 'James MacQueen', title: 'President', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80' },
+  { name: 'Jim McCarthy', title: 'Chief Operating Officer', image: 'https://images.unsplash.com/photo-1519081908948-b024b6fe00fe?w=400&q=80' },
   { name: 'Jeff Feldman', title: 'Asset Manager', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80' },
   { name: 'Omar Moreno', title: 'Senior Acquisition Analyst', image: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80' },
 ];
@@ -348,7 +351,7 @@ export const craigBergerBio = {
   title: 'Founder & Chief Executive Officer',
   image: teamAssets.craigLg,
   paragraphs: [
-    'Founder & CEO of Avid Realty Partners. Craig has been an active real estate investor for nearly 20 years, and founded Avid Realty Partners in 2015 to deploy capital across Multifamily Apartment and other real estate assets. Avid Realty Partners\' portfolio includes the acquisition of more than 2,000 apartment and hotel doors in targeted growth markets across the US totaling over $275M of acquisition value. The firm has zero realized losses with a 33.0% IRR (weighted average) across six exited deals.',
+    'Founder & CEO of Avid Realty Partners. Craig is a CPA and CFA, former Wall Street semiconductor equity research analyst, and has been an active real estate investor for nearly 20 years. He founded Avid Realty Partners in 2015 to deploy capital across multifamily and other real estate assets. The firm has acquired more than 2,500 apartment units totaling over $330M of acquisition value, with zero realized capital losses and a 32% weighted average gross IRR across seven full-cycle exits.',
     'Avid typically buys existing assets and is ramping its new development capabilities. The firm intends to continually acquire new assets over the long-term to service an increasing number of Residents and Investor-Partners. With the continuing growth of Avid Realty Partners\' operations, Craig has recruited a highly experienced leadership team of real estate executives with decades of industry experience.',
     'Craig has always been fascinated by the overlap between Wall Street investment strategies and those used to invest in Multifamily properties, finding value that others missed. After leaving Wall Street to Build Something Meaningful, Craig was determined to start a business where his unwavering work ethic would produce a meaningful difference for Residents, Team Members, and Investor-Partners.',
     'Before founding Avid Realty Partners, Craig spent more than a decade as a highly acclaimed semiconductor equity research analyst at Smith Barney Citigroup and FBR Capital Markets where he serviced leading hedge and mutual fund clients, won multiple awards, and was one of CNBC\'s go-to semiconductor market experts with over 75 TV appearances.',
@@ -361,6 +364,78 @@ export const coreValues = [
   { title: 'Institutional Discipline', description: 'Wall Street-grade analytics and risk management applied to every acquisition and asset management decision.' },
   { title: 'Resident-First Execution', description: 'Safe, secure, comfortable housing at a fair price creates the feedback loop that drives property performance.' },
   { title: 'Long-Term Partnership', description: 'We build enduring relationships with Investor-Partners from acquisition through exit.' },
+];
+
+export const investmentThesis = {
+  headline: 'A Rare Buying Opportunity',
+  summary:
+    'Avid believes there is currently a rare opportunity to acquire institutional-quality multifamily properties below replacement cost, driven by a massive supply wave, owners who bought at peak 2020–2023 valuations, refinancing distress from elevated interest rates, and discounted pricing on high-quality assets.',
+  deploymentTarget: '$500M–$1B across 20–40 multifamily acquisitions over the next 24–36 months.',
+};
+
+export const targetMarkets = {
+  sunbelt: ['Texas', 'Florida', 'Arizona', 'Nevada', 'North Carolina', 'South Carolina', 'Georgia'],
+  midwest: ['Ohio', 'Missouri', 'Indiana', 'Tennessee'],
+  supplyWave: ['Austin', 'Dallas', 'Phoenix', 'Orlando', 'Charlotte'],
+};
+
+export const acquisitionCriteria = {
+  demographics: 'Median household income generally above $65,000, with a preference for white-collar and grey-collar tenant bases.',
+  propertyTypes: [
+    { label: 'Core-Plus', description: 'Newer institutional assets, 2015–2026 vintage' },
+    { label: 'Value-Add', description: '1980s–2000s vintage with operational upside' },
+  ],
+  holdPeriod: 'Typically 3–7 years, with most underwriting based on a 5-year hold.',
+};
+
+export const riskFramework = [
+  'Conservative leverage with a preference for agency debt (Fannie Mae / Freddie Mac)',
+  'Geographic and asset diversification across target markets',
+  'Rigorous demographic and submarket screening',
+  'JV partner approval rights on major decisions',
+  'Fixed and capped debt structures where possible',
+];
+
+export const pipelineOpportunities = [
+  {
+    name: 'The Venetian',
+    location: 'Fort Myers, FL',
+    type: 'Multifamily',
+    yearBuilt: 2018,
+    units: 436,
+    equityRequired: '~$26.5M',
+    targetIRR: '23.5%',
+    equityMultiple: '2.45x',
+    status: 'Pipeline',
+    highlights: ['Assumable loan at 5.16% through 2033', 'Property tax abatement benefits'],
+    image: pageAssets.investmentOpportunities,
+  },
+  {
+    name: 'Flats at River North',
+    location: 'San Antonio, TX',
+    type: 'Multifamily',
+    yearBuilt: 2021,
+    units: 283,
+    equityRequired: '~$19.7M',
+    targetIRR: '18.5%',
+    equityMultiple: '2.05x',
+    status: 'Pipeline',
+    highlights: ['Long-term property tax abatement', 'High-leverage assumable debt'],
+    image: pageAssets.portfolio,
+  },
+  {
+    name: 'Pointe at Polaris',
+    location: 'Columbus, OH',
+    type: 'Multifamily',
+    yearBuilt: 2018,
+    units: 473,
+    equityRequired: '~$36.4M',
+    targetIRR: '22.0%',
+    equityMultiple: '2.23x',
+    status: 'Pipeline',
+    highlights: ['Strong demographics', '1-mile median household income ~$92K'],
+    image: pageAssets.homePlatform,
+  },
 ];
 
 export const investmentOpportunityTypes = [

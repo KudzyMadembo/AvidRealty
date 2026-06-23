@@ -2,7 +2,8 @@ import PageHero from '../components/PageHero';
 import Newsletter from '../components/Newsletter';
 import Button from '../components/Button';
 import LeadForm from '../components/LeadForm';
-import { investmentOpportunityTypes, images } from '../data/content';
+import PropertyCard from '../components/Cards';
+import { investmentOpportunityTypes, pipelineOpportunities, investmentThesis, images } from '../data/content';
 
 export default function InvestmentOpportunities() {
   return (
@@ -11,13 +12,26 @@ export default function InvestmentOpportunities() {
       <section className="py-16">
         <div className="mx-auto max-w-3xl px-4 text-center sm:px-6">
           <p className="text-lg leading-relaxed text-navy-800/75">
-            Founded by a multi-award-winning Wall Street equities analyst, Avid Realty Partners brings high-powered analytics, risk management, and institutional sophistication to Commercial Real Estate Investing.
+            Founded by a CPA/CFA and former Wall Street semiconductor analyst, Avid Realty Partners brings institutional analytics and risk management to multifamily investing — with a target deployment of {investmentThesis.deploymentTarget}
           </p>
         </div>
       </section>
-      <section className="pb-20">
+      <section className="bg-cream-100 py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="mb-10 text-center font-serif text-2xl text-navy-900">Current Investment Opportunities</h2>
+          <h2 className="mb-4 text-center font-serif text-2xl text-navy-900">Recent &amp; Pipeline Opportunities</h2>
+          <p className="mx-auto mb-12 max-w-3xl text-center text-navy-800/70">
+            Representative acquisitions and opportunities from Avid&apos;s current pipeline across sunbelt and select Midwest markets.
+          </p>
+          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            {pipelineOpportunities.map((p) => (
+              <PropertyCard key={p.name} property={p} pipeline />
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6">
+          <h2 className="mb-10 text-center font-serif text-2xl text-navy-900">Investment Products</h2>
           <p className="mx-auto mb-12 max-w-3xl text-center text-navy-800/70">
             Avid Realty Partners has a variety of different investment opportunities at any time, including:
           </p>
