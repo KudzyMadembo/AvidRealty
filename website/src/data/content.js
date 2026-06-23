@@ -1,3 +1,51 @@
+import { asset, brandAssets, propertyAssets, teamAssets, webinarAssets } from './assets.js';
+import { blogPostsFromAssets } from './blogPosts.js';
+
+function cleanBlogContent(content) {
+  const markers = [
+    '\nSEO KEYWORDS:',
+    '\nSEO Keywords:',
+    '\nSEO Meta Description:',
+    '\nMeta Description',
+    '\n—\n\nFocus Keyword',
+    '\nFocus Keyword:',
+    '\nWordPress Category:',
+    '\nLinkedIn Post Copy:',
+    '\nMeta Post Copy:',
+  ];
+  let cleaned = content;
+  for (const marker of markers) {
+    const idx = cleaned.indexOf(marker);
+    if (idx > 200) cleaned = cleaned.slice(0, idx);
+  }
+  return cleaned.trim();
+}
+
+const blogDates = {
+  '2024-economic-and-multifamily-outlook': 'December 27, 2023',
+  '2024-mid-year-economic-and-multifamily-outlook': 'July 15, 2024',
+  'green-living-sustainable-multifamily-property-developments': 'November 1, 2023',
+  'why-millennials-are-rushing-to-invest-in-multifamily-properties-secrets-revealed': 'October 7, 2023',
+  'inflation-surges-beyond-fed-s-expectations-a-deeper-dive-into-interest-rates-and': 'September 29, 2023',
+};
+
+export const blogPosts = blogPostsFromAssets
+  .map((post) => {
+    const content = cleanBlogContent(post.content);
+    const excerpt =
+      post.excerpt === post.title || post.excerpt.length < 40
+        ? `${content.slice(0, 240).trim()}…`
+        : post.excerpt;
+    return {
+      ...post,
+      date: blogDates[post.slug] ?? post.date,
+      image: propertyAssets.pearl,
+      excerpt,
+      content,
+    };
+  })
+  .sort((a, b) => new Date(b.date) - new Date(a.date));
+
 export const site = {
   name: 'Avid Realty Partners',
   tagline: 'Multifamily Real Estate Investment',
@@ -17,17 +65,17 @@ export const site = {
 };
 
 export const images = {
-  hero: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=1920&q=80',
-  heroAlt: 'https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1920&q=80',
-  pool: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=1200&q=80',
-  skyline: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625?w=1200&q=80',
-  interior: 'https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80',
-  team: 'https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=1200&q=80',
-  analytics: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=1200&q=80',
-  building: 'https://images.unsplash.com/photo-1460317442991-0ec209397118?w=1200&q=80',
-  contact: 'https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&q=80',
-  research: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=1200&q=80',
-  careers: 'https://images.unsplash.com/photo-1521737711862-e3b97375f902?w=1200&q=80',
+  hero: brandAssets.hero,
+  heroAlt: propertyAssets.pearl,
+  pool: propertyAssets.auxo,
+  skyline: brandAssets.hero,
+  interior: propertyAssets.pearl,
+  team: teamAssets.craigLg,
+  analytics: brandAssets.hero,
+  building: propertyAssets.reserve,
+  contact: propertyAssets.regency,
+  research: brandAssets.hero,
+  careers: propertyAssets.pines,
 };
 
 export const stats = [
@@ -139,7 +187,7 @@ export const currentInvestments = [
     targetPeriod: '5 Years',
     minInvestment: '$100,000',
     targetIRR: '21.1%',
-    image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80',
+    image: propertyAssets.reserve,
   },
   {
     name: 'Auxo at Memorial',
@@ -152,7 +200,7 @@ export const currentInvestments = [
     targetPeriod: '5 Years',
     minInvestment: '$100,000',
     targetIRR: '18.8%',
-    image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80',
+    image: propertyAssets.auxo,
   },
   {
     name: 'The Pearl at Midtown',
@@ -165,7 +213,7 @@ export const currentInvestments = [
     targetPeriod: '5 Years',
     minInvestment: '$100,000',
     targetIRR: '19.4%',
-    image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80',
+    image: propertyAssets.pearl,
   },
   {
     name: 'Pines at Woodcreek',
@@ -178,7 +226,7 @@ export const currentInvestments = [
     targetPeriod: '5 Years',
     minInvestment: '$100,000',
     targetIRR: '22.9%',
-    image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
+    image: propertyAssets.pines,
   },
   {
     name: 'The Reserve at Heritage',
@@ -191,7 +239,7 @@ export const currentInvestments = [
     targetPeriod: '5 Years',
     minInvestment: '$100,000',
     targetIRR: '20.0%',
-    image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80',
+    image: propertyAssets.reserve,
   },
   {
     name: 'The Regency at St. Louis',
@@ -204,7 +252,7 @@ export const currentInvestments = [
     targetPeriod: '5 Years',
     minInvestment: '$100,000',
     targetIRR: '20.0%',
-    image: 'https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?w=800&q=80',
+    image: propertyAssets.regency,
   },
 ];
 
@@ -231,7 +279,7 @@ export const trackRecordDeals = [
 ];
 
 export const leadership = [
-  { name: 'Craig Berger', title: 'Founder & Chief Executive Officer', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80' },
+  { name: 'Craig Berger', title: 'Founder & Chief Executive Officer', image: teamAssets.craig },
   { name: 'James MacQueen', title: 'President', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80' },
   { name: 'Jim McCarthy', title: 'Chief Operating Officer', image: 'https://images.unsplash.com/photo-1519081908948-b024b6fe00fe?w=400&q=80' },
   { name: 'Mary Tucker', title: 'Chief Financial Officer', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80' },
@@ -281,77 +329,10 @@ export const events = [
   },
 ];
 
-export const blogPosts = [
-  {
-    slug: '2025-economic-outlook',
-    title: '2025 Economic and Multifamily Outlook: Key Trends to Watch',
-    author: 'Craig Berger',
-    date: 'January 2, 2025',
-    category: 'Real Estate Trends',
-    excerpt: 'Is 2025 the year of multifamily real estate resurgence? With falling interest rates, stabilizing inflation, and a shifting investor landscape, this year could bring unmatched opportunities for growth.',
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
-    content: `Is 2025 the year of multifamily real estate resurgence? With falling interest rates, stabilizing inflation, and a shifting investor landscape, this year could bring unmatched opportunities for growth and value creation in sunbelt markets.
-
-Key themes for 2025 include moderating cap rate expansion, renewed institutional appetite for value-add multifamily, and continued migration to high-growth secondary markets. Avid Realty Partners remains focused on disciplined underwriting and operational excellence.`,
-  },
-  {
-    slug: '2024-mid-year-outlook',
-    title: '2024 Mid-Year Economic and Multifamily Outlook',
-    author: 'Craig Berger',
-    date: 'July 15, 2024',
-    category: 'Economic Insights',
-    excerpt: 'Inflation trends show deflation in major categories. Headline and Core CPI have remained around 3% over the past six months, creating a more favorable environment for multifamily acquisitions.',
-    image: 'https://images.unsplash.com/photo-1642790106117-e829e14a795f?w=800&q=80',
-    content: `Recent data shows positive trends, with many spending categories experiencing deflation. Headline and Core CPI have remained around 3% over the past six months.
-
-For multifamily investors, stabilizing inflation supports more predictable rent growth assumptions and improved debt markets. Avid continues to source opportunities in Houston, Dallas, Atlanta, and other sunbelt metros.`,
-  },
-  {
-    slug: '2024-top-10-outlook',
-    title: '2024 Economic and Multifamily Outlook: Our Top 10 List',
-    author: 'Craig Berger',
-    date: 'January 9, 2024',
-    category: 'Economic Outlook',
-    excerpt: 'The 2024 Economic and Multifamily Outlook projects to be an exciting year of politics and economic progress, full of tremendous real estate buying opportunities.',
-    image: 'https://images.unsplash.com/photo-1560520653-9a0de4b45d14?w=800&q=80',
-    content: `The 2024 Economic and Multifamily Outlook projects to be an exciting year of politics and economic progress and full of tremendous real estate buying opportunities. We think that 2024 is a pivotal year for disciplined multifamily investors.`,
-  },
-  {
-    slug: 'sustainable-multifamily',
-    title: 'Green Living: Sustainable Multifamily Property Developments',
-    author: 'James MacQueen',
-    date: 'November 1, 2023',
-    category: 'Sustainability',
-    excerpt: 'By 2050, urban areas are anticipated to house nearly 68% of the global population. As cities grow, sustainable multifamily development becomes essential.',
-    image: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=800&q=80',
-    content: `By 2050, urban areas are anticipated to house nearly 68% of the global population. As cities grow, so does the demand for sustainable, energy-efficient housing that delivers quality of life for residents and strong returns for investors.`,
-  },
-  {
-    slug: 'millennials-multifamily',
-    title: 'Why Millennials are Rushing to Invest in Multifamily Properties',
-    author: 'Jim McCarthy',
-    date: 'October 7, 2023',
-    category: 'Investment Trends',
-    excerpt: 'There\'s a significant shift in the real estate market. Millennials, often heralded as the generation of renters, are increasingly investing in multifamily properties.',
-    image: 'https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&q=80',
-    content: `There's a significant shift in the real estate market these days. Millennials are discovering the tax advantages, passive income, and wealth-building potential of multifamily syndications.`,
-  },
-  {
-    slug: 'inflation-fed-expectations',
-    title: 'Inflation Surges Beyond FED\'s Expectations',
-    author: 'Craig Berger',
-    date: 'September 29, 2023',
-    category: 'Economic Analysis',
-    excerpt: 'The August Consumer Price Index data highlighted more pronounced inflation than the Federal Reserve anticipated, suggesting a sustained period of elevated rates.',
-    image: 'https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=800&q=80',
-    content: `The August Consumer Price Index data highlighted a more pronounced inflation than the Federal Reserve anticipated. The current trajectory suggests a sustained period of higher-for-longer interest rates.`,
-  },
-];
-
 export const craigBergerBio = {
   name: 'Craig Berger',
   title: 'Founder & Chief Executive Officer',
-  image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?w=600&q=80',
+  image: teamAssets.craigLg,
   paragraphs: [
     'Founder & CEO of Avid Realty Partners. Craig has been an active real estate investor for nearly 20 years, and founded Avid Realty Partners in 2015 to deploy capital across Multifamily Apartment and other real estate assets. Avid Realty Partners\' portfolio includes the acquisition of more than 2,000 apartment and hotel doors in targeted growth markets across the US totaling over $275M of acquisition value. The firm has zero realized losses with a 33.0% IRR (weighted average) across six exited deals.',
     'Avid typically buys existing assets and is ramping its new development capabilities. The firm intends to continually acquire new assets over the long-term to service an increasing number of Residents and Investor-Partners. With the continuing growth of Avid Realty Partners\' operations, Craig has recruited a highly experienced leadership team of real estate executives with decades of industry experience.',
@@ -388,17 +369,17 @@ export const webinarReplays = [
   {
     title: 'The Financial Toolbox: Accounting, Forecasting, And Technology In Multifamily Real Estate',
     description: 'Watch the webinar replay for a clear roadmap to success. From analyzing intricate accounting principles specific to real estate to evaluating risk and returns effectively, stay ahead with advanced forecasting techniques in a dynamic market.',
-    image: 'https://images.unsplash.com/photo-1556761175-b413da4baf72?w=800&q=80',
+    image: webinarAssets.cash50k,
   },
   {
     title: 'Identifying Value: Sourcing And Underwriting To Create Maximum Value In Real Estate',
     description: 'Learn practical strategies to identify unique investment opportunities. Delve into sourcing deals and underwriting a real estate investment — crucial for both seasoned investors and those new to the field.',
-    image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80',
+    image: propertyAssets.auxo,
   },
   {
     title: 'What To Do With $50K In Cash – Saving Vs. Investing In Real Estate',
     description: 'Craig Berger explains why to invest $50K in real estate versus holding it in cash. Learn how to identify lucrative opportunities, understand risks, and mitigate them effectively.',
-    image: 'https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=800&q=80',
+    image: webinarAssets.cash50k,
   },
 ];
 
