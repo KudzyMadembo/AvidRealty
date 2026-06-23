@@ -31,8 +31,9 @@ ensure(join(pub, 'team'));
 ensure(join(pub, 'webinars'));
 
 // Logo & favicon from official New Logo folder
-optimize(join(src, 'New Logo', 'Avid-Logo-800x368.jpg'), join(pub, 'logo.png'), 400);
-optimize(join(src, 'New Logo', 'Avid-Logo-Icon-850x850.jpg'), join(pub, 'favicon.png'), 64);
+execSync('python scripts/update-logo.py', { cwd: root, stdio: 'inherit' });
+
+// Favicon handled by update-logo.py
 
 // Craig Berger headshot
 optimize(join(src, 'Craig-Berger-Profile-350x350.jpg'), join(pub, 'team', 'craig-berger.jpg'), 400);

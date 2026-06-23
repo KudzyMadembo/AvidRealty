@@ -5,8 +5,8 @@ const asset = (file) => `${import.meta.env.BASE_URL}${file}`;
 
 export default function Logo({ variant = 'full', size = 'md', className = '' }) {
   const sizes = {
-    sm: 'h-7 w-auto max-w-[140px] sm:max-w-[150px]',
-    md: 'h-8 w-auto max-w-[160px] sm:h-9 sm:max-w-[180px]',
+    sm: 'h-9 w-auto',
+    md: 'h-11 w-auto sm:h-12',
   };
 
   if (variant === 'icon') {
@@ -27,7 +27,7 @@ export default function Logo({ variant = 'full', size = 'md', className = '' }) 
       alt={`${site.name} logo`}
       className={`${sizes[size] ?? sizes.md} object-contain ${className}`}
       width={180}
-      height={36}
+      height={120}
       loading="eager"
       decoding="async"
     />

@@ -9,6 +9,7 @@
     "build:pages": "cross-env BASE_PATH=/AvidRealty/ vite build",
     "preview:pages": "cross-env BASE_PATH=/AvidRealty/ vite preview",
     "assets": "node scripts/integrate-assets.mjs",
+    "logo": "python scripts/update-logo.py",
     "pages": "node scripts/download-page-images.mjs",
     "blogs": "node scripts/extract-blogs.mjs",
     "lint": "eslint .",
