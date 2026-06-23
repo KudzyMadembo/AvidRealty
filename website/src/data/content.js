@@ -112,7 +112,7 @@ export const heroSlides = [
     subtitle: 'New offerings available for qualified investors',
     cta: 'Investment Opportunities',
     link: '/investment-opportunities',
-    image: propertyAssets.pearl,
+    image: pageAssets.homeHero2,
   },
   {
     title: 'Institutional Analytics',

@@ -20,13 +20,16 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative flex h-[85vh] min-h-[560px] items-center overflow-hidden">
+      <section className="relative flex h-[85vh] min-h-[600px] items-center overflow-hidden bg-navy-950">
         {heroSlides.map((s, i) => (
           <img
             key={s.title}
             src={s.image}
             alt=""
-            className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ${i === slide ? 'opacity-100' : 'opacity-0'}`}
+            className={`absolute inset-0 h-full w-full object-cover object-center transition-opacity duration-1000 ${i === slide ? 'opacity-100' : 'opacity-0'}`}
+            loading={i === 0 ? 'eager' : 'lazy'}
+            decoding="async"
+            fetchPriority={i === 0 ? 'high' : 'auto'}
           />
         ))}
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/60 to-transparent" />
