@@ -31,7 +31,7 @@ export default function Navbar() {
       </div>
 
       <nav className="border-b border-white/10 bg-navy-900/95 backdrop-blur-md">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 sm:px-6">
+        <div className="mx-auto flex h-[5.5rem] max-w-7xl items-center justify-between px-4 sm:h-[6.5rem] sm:px-6">
           <LogoLink />
 
           <div className="hidden items-center gap-1 lg:flex">

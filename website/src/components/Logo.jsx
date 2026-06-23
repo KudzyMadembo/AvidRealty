@@ -6,7 +6,7 @@ const asset = (file) => `${import.meta.env.BASE_URL}${file}`;
 export default function Logo({ variant = 'full', size = 'md', className = '' }) {
   const sizes = {
     sm: 'h-11 w-auto sm:h-12',
-    md: 'h-14 w-auto sm:h-16 lg:h-[4.5rem]',
+    md: 'h-[5.5rem] w-auto sm:h-[6.5rem]',
   };
 
   if (variant === 'icon') {
@@ -36,7 +36,7 @@ export default function Logo({ variant = 'full', size = 'md', className = '' }) 
 
 export function LogoLink({ variant = 'full', size = 'md', className = '' }) {
   return (
-    <Link to="/" className={`inline-flex shrink-0 items-center ${className}`}>
+    <Link to="/" className={`inline-flex h-full shrink-0 items-center ${className}`}>
       <Logo variant={variant} size={size} />
     </Link>
   );
