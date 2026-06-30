@@ -3,7 +3,7 @@ import { site } from '../data/content';
 
 export default function Button({ children, to, href, variant = 'primary', className = '', ...props }) {
   const base =
-    'inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-sm font-semibold transition-all duration-200';
+    'inline-flex items-center justify-center gap-2 rounded-full px-6 py-3 text-base font-semibold transition-all duration-200';
   const variants = {
     primary: 'bg-gold-400 text-navy-950 hover:bg-gold-500 hover:shadow-lg hover:shadow-gold-400/25',
     secondary: 'border border-white/30 bg-white/10 text-white backdrop-blur-sm hover:bg-white/20',

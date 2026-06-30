@@ -17,13 +17,12 @@ export default function Invest() {
       </section>
       <section className="pb-20">
         <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-2">
-          <LeadForm title="Investor Information Form" submitLabel="Submit" fields="investor" />
+          <LeadForm title="Submit Your Contact Information" submitLabel="Submit" fields="investor" />
           <div>
             <h2 className="font-serif text-2xl text-navy-900">Why Investors Choose Avid</h2>
             <ul className="mt-6 space-y-3 text-sm text-navy-800/70">
-              <li className="flex gap-2"><span className="text-gold-500">✓</span> Zero realized losses across seven full-cycle exits</li>
-              <li className="flex gap-2"><span className="text-gold-500">✓</span> 32% weighted average gross IRR on exited deals</li>
-              <li className="flex gap-2"><span className="text-gold-500">✓</span> $330M+ in multifamily assets acquired</li>
+              <li className="flex gap-2"><span className="text-gold-500">✓</span> Seven full-cycle multifamily exits</li>
+              <li className="flex gap-2"><span className="text-gold-500">✓</span> $300M+ in multifamily assets acquired</li>
               <li className="flex gap-2"><span className="text-gold-500">✓</span> Deal-by-deal LP, promissory note, 1031, and fund options</li>
               <li className="flex gap-2"><span className="text-gold-500">✓</span> Transparent modeling and regular investor updates</li>
               <li className="flex gap-2"><span className="text-gold-500">✓</span> Institutional underwriting from a Wall Street analyst founder</li>

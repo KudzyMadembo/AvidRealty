@@ -3,7 +3,7 @@ import { site, navLinks } from '../data/content';
 import { LogoLink } from './Logo';
 import { SocialLinks } from './SocialLinks';
 
-const linkClass = 'text-[13px] leading-snug text-white/55 transition-colors hover:text-white';
+const linkClass = 'text-sm leading-snug text-white/55 transition-colors hover:text-white';
 
 export default function Footer() {
   const about = navLinks.find((n) => n.label === 'About')?.children ?? [];
@@ -24,7 +24,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="col-span-2 sm:col-span-3 lg:col-span-2">
             <LogoLink className="mb-3" size="sm" />
-            <p className="max-w-xs text-[13px] leading-relaxed text-white/50">
+            <p className="max-w-xs text-sm leading-relaxed text-white/50">
               Multifamily investment platform with institutional analytics and sunbelt expertise.
             </p>
             <SocialLinks className="mt-4" />
@@ -32,7 +32,7 @@ export default function Footer() {
 
           {/* About */}
           <div>
-            <h4 className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold-400/90">
+            <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-gold-400/90">
               About
             </h4>
             <ul className="space-y-1.5">
@@ -46,7 +46,7 @@ export default function Footer() {
 
           {/* Media */}
           <div>
-            <h4 className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold-400/90">
+            <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-gold-400/90">
               Media
             </h4>
             <ul className="space-y-1.5">
@@ -60,7 +60,7 @@ export default function Footer() {
 
           {/* Learn More */}
           <div>
-            <h4 className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold-400/90">
+            <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-gold-400/90">
               Learn More
             </h4>
             <ul className="space-y-1.5">
@@ -74,7 +74,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div>
-            <h4 className="mb-3 text-[11px] font-semibold uppercase tracking-[0.14em] text-gold-400/90">
+            <h4 className="mb-3 text-xs font-semibold uppercase tracking-[0.14em] text-gold-400/90">
               Contact
             </h4>
             <address className="space-y-1 not-italic text-[13px] leading-snug text-white/55">

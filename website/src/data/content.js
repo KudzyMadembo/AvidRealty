@@ -93,7 +93,7 @@ export const images = {
 };
 
 export const stats = [
-  { value: '$330M', label: 'Real Estate Assets Acquired' },
+  { value: '$300M+', label: 'Real Estate Assets Acquired' },
   { value: '2,500+', label: 'Multifamily Units Acquired' },
   { value: '$8M', label: 'Sponsor Co-Invested Capital' },
   { value: '$140M', label: 'Sold Assets — Full Cycle Deals' },
@@ -101,24 +101,24 @@ export const stats = [
 
 export const heroSlides = [
   {
-    title: 'Zero Realized Losses',
-    subtitle: '32% weighted average gross IRR across 7 full-cycle exits',
-    cta: 'View Track Record',
-    link: '/track-record',
+    title: 'Proprietary and Highly Selective Acquisition Funnel',
+    subtitle: 'Disciplined sourcing and underwriting across sunbelt and select Midwest multifamily markets',
+    cta: 'Our Approach',
+    link: '/investment-approach',
     image: pageAssets.homeHero1,
   },
   {
     title: '$500M–$1B Target Deployment',
     subtitle: '20–40 multifamily acquisitions over the next 24–36 months',
-    cta: 'Investment Opportunities',
-    link: '/investment-opportunities',
+    cta: 'Contact Us',
+    link: '/investment-opportunities#inquire',
     image: pageAssets.homeHero2,
   },
   {
-    title: 'Institutional Analytics',
-    subtitle: 'Acquiring below replacement cost amid oversupply, refinancing distress, and elevated rates',
-    cta: 'Our Approach',
-    link: '/investment-approach',
+    title: 'Repeatable and Programmatic Acquisition Platform',
+    subtitle: 'Relentless focus on asset-level execution',
+    cta: 'View Portfolio',
+    link: '/portfolio',
     image: pageAssets.homeHero3,
   },
 ];
@@ -204,19 +204,6 @@ export const currentInvestments = [
     image: propertyAssets.terraces,
   },
   {
-    name: 'Auxo at Memorial',
-    location: 'Houston, TX',
-    type: 'Multifamily',
-    yearBuilt: 2009,
-    units: 402,
-    acquired: 'April 2022',
-    investmentType: 'Limited Partnership',
-    targetPeriod: '5 Years',
-    minInvestment: '$100,000',
-    targetIRR: '18.8%',
-    image: propertyAssets.auxo,
-  },
-  {
     name: 'The Pearl at Midtown',
     location: 'Dallas, TX',
     type: 'Multifamily',
@@ -284,8 +271,8 @@ export const otherExits = [
 
 export const trackRecordStats = [
   { value: '7', label: 'Full-Cycle Exits' },
-  { value: '32%', label: 'Weighted Gross IRR' },
-  { value: '2,500', label: 'Units Acquired' },
+  { value: '$300M+', label: 'Assets Acquired' },
+  { value: '2,500+', label: 'Units Acquired' },
 ];
 
 export const trackRecordDeals = [
@@ -351,7 +338,7 @@ export const craigBergerBio = {
   title: 'Founder & Chief Executive Officer',
   image: teamAssets.craigLg,
   paragraphs: [
-    'Founder & CEO of Avid Realty Partners. Craig is a CPA and CFA, former Wall Street semiconductor equity research analyst, and has been an active real estate investor for nearly 20 years. He founded Avid Realty Partners in 2015 to deploy capital across multifamily and other real estate assets. The firm has acquired more than 2,500 apartment units totaling over $330M of acquisition value, with zero realized capital losses and a 32% weighted average gross IRR across seven full-cycle exits.',
+    'Founder & CEO of Avid Realty Partners. Craig is a CPA and CFA, former Wall Street semiconductor equity research analyst, and has been an active real estate investor for nearly 20 years. He founded Avid Realty Partners in 2015 to deploy capital across multifamily and other real estate assets. The firm has acquired more than 2,500 apartment units totaling over $300M of acquisition value across seven full-cycle exits.',
     'Avid typically buys existing assets and is ramping its new development capabilities. The firm intends to continually acquire new assets over the long-term to service an increasing number of Residents and Investor-Partners. With the continuing growth of Avid Realty Partners\' operations, Craig has recruited a highly experienced leadership team of real estate executives with decades of industry experience.',
     'Craig has always been fascinated by the overlap between Wall Street investment strategies and those used to invest in Multifamily properties, finding value that others missed. After leaving Wall Street to Build Something Meaningful, Craig was determined to start a business where his unwavering work ethic would produce a meaningful difference for Residents, Team Members, and Investor-Partners.',
     'Before founding Avid Realty Partners, Craig spent more than a decade as a highly acclaimed semiconductor equity research analyst at Smith Barney Citigroup and FBR Capital Markets where he serviced leading hedge and mutual fund clients, won multiple awards, and was one of CNBC\'s go-to semiconductor market experts with over 75 TV appearances.',
@@ -394,48 +381,6 @@ export const riskFramework = [
   'Rigorous demographic and submarket screening',
   'JV partner approval rights on major decisions',
   'Fixed and capped debt structures where possible',
-];
-
-export const pipelineOpportunities = [
-  {
-    name: 'The Venetian',
-    location: 'Fort Myers, FL',
-    type: 'Multifamily',
-    yearBuilt: 2018,
-    units: 436,
-    equityRequired: '~$26.5M',
-    targetIRR: '23.5%',
-    equityMultiple: '2.45x',
-    status: 'Pipeline',
-    highlights: ['Assumable loan at 5.16% through 2033', 'Property tax abatement benefits'],
-    image: pageAssets.investmentOpportunities,
-  },
-  {
-    name: 'Flats at River North',
-    location: 'San Antonio, TX',
-    type: 'Multifamily',
-    yearBuilt: 2021,
-    units: 283,
-    equityRequired: '~$19.7M',
-    targetIRR: '18.5%',
-    equityMultiple: '2.05x',
-    status: 'Pipeline',
-    highlights: ['Long-term property tax abatement', 'High-leverage assumable debt'],
-    image: pageAssets.portfolio,
-  },
-  {
-    name: 'Pointe at Polaris',
-    location: 'Columbus, OH',
-    type: 'Multifamily',
-    yearBuilt: 2018,
-    units: 473,
-    equityRequired: '~$36.4M',
-    targetIRR: '22.0%',
-    equityMultiple: '2.23x',
-    status: 'Pipeline',
-    highlights: ['Strong demographics', '1-mile median household income ~$92K'],
-    image: pageAssets.homePlatform,
-  },
 ];
 
 export const investmentOpportunityTypes = [

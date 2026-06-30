@@ -9,7 +9,7 @@ export default function Portfolio() {
       <PageHero title="Portfolio" subtitle="Our Properties" image={images.portfolio} />
       <section className="py-20">
         <div className="mx-auto max-w-7xl px-4 sm:px-6">
-          <h2 className="mb-10 font-serif text-2xl text-navy-900">Current Investments</h2>
+          <h2 className="mb-10 font-serif text-2xl text-navy-900">Avid Realty Partners&apos; Portfolio:</h2>
           <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
             {currentInvestments.map((p) => (
               <PropertyCard key={p.name} property={p} />

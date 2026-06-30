@@ -34,8 +34,7 @@ export default function Home() {
         ))}
         <div className="absolute inset-0 bg-gradient-to-r from-navy-950/90 via-navy-950/60 to-transparent" />
         <div className="relative mx-auto w-full max-w-7xl px-4 sm:px-6">
-          <p className="text-sm font-medium uppercase tracking-[0.25em] text-gold-400">Avid Realty Partners</p>
-          <h1 className="mt-4 max-w-2xl font-serif text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="max-w-3xl font-serif text-4xl leading-tight text-white sm:text-5xl lg:text-6xl">
             {current.title}
           </h1>
           <p className="mt-4 max-w-xl text-lg text-white/70">{current.subtitle}</p>
@@ -63,18 +62,18 @@ export default function Home() {
               A Real Estate Investment Platform
             </h2>
             <p className="mt-6 leading-relaxed text-navy-800/70">
-              Avid Realty Partners proudly provides safe and secure housing that positively impacts our Residents&apos; Quality of Life, while generating personal fulfillment, professional growth, and meaningful wealth for our Investor-Partners and Team Members.
+              Avid Realty Partners proudly provides safe and secure housing that positively impacts our Residents&apos; Quality of Life, while generating robust risk-adjusted returns for our Investor-Partners, as well as personal fulfillment and professional growth for our Team Members.
             </p>
             <p className="mt-4 leading-relaxed text-navy-800/70">
-              We offer deal-by-deal limited partner opportunities, a high yielding promissory note, and other products. With a target deployment of $500M–$1B across 20–40 multifamily acquisitions over the next 24–36 months, our management team applies Wall Street-grade analytics to identify opportunities below replacement cost.
+              Avid Realty Partners offers deal-by-deal Limited Partner opportunities, a high yielding private credit note, and other investment products to meet a variety of client needs and structures. With a target of 15–30 multifamily acquisitions over the next 36 months, Avid is leveraging our proprietary acquisition pipeline, extreme property-level execution, and institutional reporting processes to buy at low prices in today&apos;s distressed environment.
             </p>
             <Button to="/about" variant="outline" className="mt-8">Learn More</Button>
           </div>
           <div className="relative">
             <img src={images.homePlatform} alt="Luxury multifamily apartment community" className="rounded-2xl shadow-2xl" />
             <div className="absolute -bottom-6 -left-6 rounded-xl bg-navy-900 p-6 text-white shadow-xl">
-              <div className="font-serif text-3xl text-gold-400">32%</div>
-              <div className="text-sm text-white/60">Avg. Gross IRR</div>
+              <div className="font-serif text-3xl text-gold-400">2,500+</div>
+              <div className="text-base text-white/60">Multifamily Units</div>
             </div>
           </div>
         </div>
@@ -97,7 +96,7 @@ export default function Home() {
                     <Icon className="h-6 w-6" />
                   </div>
                   <h3 className="text-lg font-semibold text-navy-900">{adv.title}</h3>
-                  <p className="mt-3 text-sm leading-relaxed text-navy-800/60">{adv.description}</p>
+                  <p className="mt-3 text-base leading-relaxed text-navy-800/65">{adv.description}</p>
                 </div>
               );
             })}

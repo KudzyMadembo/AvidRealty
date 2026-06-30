@@ -16,7 +16,7 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div className="bg-navy-950 text-white/80">
-        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-xs sm:px-6">
+        <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 text-sm sm:px-6">
           <div className="flex items-center gap-4">
             <PhoneLink />
             <SocialLinks className="hidden sm:flex" />
@@ -43,7 +43,7 @@ export default function Navbar() {
                   onMouseEnter={() => setDropdown(item.label)}
                   onMouseLeave={() => setDropdown(null)}
                 >
-                  <button className="flex items-center gap-1 rounded-lg px-3 py-2 text-sm text-white/90 hover:bg-white/10 hover:text-white">
+                  <button className="flex items-center gap-1 rounded-lg px-3 py-2 text-base text-white/90 hover:bg-white/10 hover:text-white">
                     {item.label}
                     <ChevronDown className="h-4 w-4" />
                   </button>
@@ -53,7 +53,7 @@ export default function Navbar() {
                         <Link
                           key={child.path}
                           to={child.path}
-                          className={`block px-4 py-2.5 text-sm hover:bg-white/10 ${isActive(child.path) ? 'text-gold-400' : 'text-white/80'}`}
+                          className={`block px-4 py-2.5 text-base hover:bg-white/10 ${isActive(child.path) ? 'text-gold-400' : 'text-white/80'}`}
                         >
                           {child.label}
                         </Link>
@@ -65,13 +65,13 @@ export default function Navbar() {
                 <Link
                   key={item.path}
                   to={item.path}
-                  className={`rounded-lg px-3 py-2 text-sm hover:bg-white/10 ${isActive(item.path) ? 'text-gold-400' : 'text-white/90'}`}
+                  className={`rounded-lg px-3 py-2 text-base hover:bg-white/10 ${isActive(item.path) ? 'text-gold-400' : 'text-white/90'}`}
                 >
                   {item.label}
                 </Link>
               )
             )}
-            <Button to="/invest" className="ml-2 !py-2.5 !text-xs">Invest with Us</Button>
+            <Button to="/invest" className="ml-2 !py-2.5 !text-sm">Invest with Us</Button>
           </div>
 
           <button
@@ -91,13 +91,13 @@ export default function Navbar() {
                 <div key={item.label} className="mb-3">
                   <div className="mb-1 text-xs font-semibold uppercase tracking-wider text-gold-400">{item.label}</div>
                   {item.children.map((child) => (
-                    <Link key={child.path} to={child.path} onClick={() => setOpen(false)} className="block py-2 text-sm text-white/80">
+                    <Link key={child.path} to={child.path} onClick={() => setOpen(false)} className="block py-2 text-base text-white/80">
                       {child.label}
                     </Link>
                   ))}
                 </div>
               ) : (
-                <Link key={item.path} to={item.path} onClick={() => setOpen(false)} className="block py-2 text-sm text-white/80">
+                <Link key={item.path} to={item.path} onClick={() => setOpen(false)} className="block py-2 text-base text-white/80">
                   {item.label}
                 </Link>
               )

@@ -3,7 +3,7 @@ export const SITE_URL = 'https://kudzymadembo.github.io/AvidRealty';
 export const defaultSeo = {
   title: 'Avid Realty Partners | Multifamily Real Estate Investment',
   description:
-    'Avid Realty Partners is a multifamily real estate investment platform with a 32% average gross IRR, zero realized losses, $330M+ acquired, and institutional analytics across sunbelt growth markets.',
+    'Avid Realty Partners is a multifamily real estate investment platform with $300M+ acquired, institutional analytics, and a programmatic acquisition approach across sunbelt growth markets.',
   keywords:
     'multifamily real estate, real estate investment, Avid Realty Partners, passive income, sunbelt multifamily, commercial real estate, accredited investors',
   image: `${SITE_URL}/logo.png`,
@@ -13,13 +13,13 @@ export const pageSeo = {
   '/': {
     title: 'Avid Realty Partners | Multifamily Real Estate Investment Platform',
     description:
-      'Invest in sunbelt multifamily with Avid Realty Partners. Zero realized losses, 32% gross IRR, $330M+ assets acquired, and $500M–$1B deployment target.',
+      'Invest in sunbelt multifamily with Avid Realty Partners. $300M+ assets acquired, $500M–$1B deployment target, and a selective acquisition platform.',
     keywords: 'multifamily investment platform, real estate syndication, Avid Realty Partners, passive real estate income',
   },
   '/about': {
     title: 'About Avid Realty Partners | Founder & Overview',
     description:
-      'Founded by Craig Berger, CPA/CFA, in 2015, Avid Realty Partners has acquired 2,500+ multifamily units totaling $330M+ with zero realized losses across seven full-cycle exits.',
+      'Founded by Craig Berger, CPA/CFA, in 2015, Avid Realty Partners has acquired 2,500+ multifamily units totaling $300M+ across seven full-cycle exits.',
   },
   '/why-avid': {
     title: 'Why Avid Realty Partners | Competitive Advantages',
@@ -32,9 +32,9 @@ export const pageSeo = {
       'Acquire below replacement cost in sunbelt and Midwest markets. Core-plus and value-add multifamily with conservative leverage and agency debt.',
   },
   '/track-record': {
-    title: 'Track Record | 32% Weighted Gross IRR',
+    title: 'Track Record | Multifamily Full-Cycle Exits',
     description:
-      'Avid Realty Partners track record: 7 full-cycle exits, 32% weighted gross IRR, 2,500 units acquired, zero realized losses.',
+      'Avid Realty Partners track record: 7 full-cycle exits, 2,500+ units acquired, $300M+ in multifamily assets.',
   },
   '/team': {
     title: 'Meet the Avid Team | Leadership & Professionals',
@@ -44,7 +44,7 @@ export const pageSeo = {
   '/investment-opportunities': {
     title: 'Investment Opportunities | Multifamily LP & 1031 Options',
     description:
-      'Current and pipeline multifamily opportunities including direct LP deals, promissory notes, 1031 exchanges, and the Resolute Multifamily Fund I.',
+      'Contact Avid Realty Partners to learn about multifamily LP, promissory note, 1031, and fund investment options for accredited investors.',
   },
   '/portfolio': {
     title: 'Portfolio | Current & Exited Multifamily Properties',
